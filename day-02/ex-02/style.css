@@ -1,0 +1,18 @@
+body {
+    background-color: #eee;
+}
+
+table {
+    border: 1px solid green;
+}
+
+td:not(tr:first-child td:first-child) {
+    text-align: center;
+    border    : 1px solid green;
+    font-size : 30px;
+}
+
+tr:first-child td:first-child {
+    font-size: 50px;
+    border   : 1px solid green;
+}
