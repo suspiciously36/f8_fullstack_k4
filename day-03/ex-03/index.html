@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div>
+        <label><span class="username">Username:</span> <input type="text" /></label>
+      </div>
+      <div>
+        <label><span class="pswd">Password:</span> <input type="password" /></label>
+      </div>
+      <div>
+        <label><span class="employ">City of Employment:</span><input type="text" /></label>
+      </div>
+      <div>
+        <label for="servers">Web server: </label>
+        <select name="servers" id="servers">
+          <option value="">--Choose a server--</option>
+          <option value="1">Server 1</option>
+          <option value="2">Server 2</option>
+          <option value="3">Server 3</option>
+        </select>
+        <div class="role-picker">
+          <p
+            >Please specify your role:
+            <ul>
+              <label for="admin"><li><input type="radio" name="role" id="admin" />Admin</li></label>
+              <label for="engineer"><li><input type="radio" name="role" id="engineer" />Engineer</li></label>
+              <label for="manager"><li><input type="radio" name="role" id="manager" />Manager</li></label>
+              <label for="guest"><li><input type="radio" name="role" id="guest" />Guest</li></label>
+            </ul>
+          </p>
+        </div>
+       <div class="sign-on">
+            <p>Single Sign-on to the following:</p>
+            <ul>
+                <label for="mail"><li><input type="checkbox" name="sign" id="mail">Mail</li></label>
+                <label for="payroll"><li><input type="checkbox" name="sign" id="payroll">Payroll</li></label>
+                <label for="selfservice"><li><input type="checkbox" name="sign" id="selfservice">Self-service</li></label>
+            </ul>
+       </div>
+       <div class="button-container">
+           <button>Login</button>
+           <button>Reset</button>
+       </div>
+      </div>
+    </form>
+  </body>
+</html>

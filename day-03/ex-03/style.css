@@ -1,0 +1,64 @@
+body {
+    margin   : 8px;
+    font-size: 12px;
+}
+
+ul {
+    list-style-type: none;
+    padding-right  : 20px;
+}
+
+input {
+    margin-bottom: 10px;
+    border       : 1px solid #7F9DB9;
+}
+
+p,
+span {
+    width: 90px;
+
+}
+
+.username {
+    padding-right: 78px;
+}
+
+.pswd {
+    padding-right: 80px;
+}
+
+.employ {
+    padding-right: 30px;
+}
+
+label[for="servers"] {
+    padding-right: 72px;
+}
+
+select[id="servers"] {
+    border: 1px solid #7F9DB9;
+}
+
+
+.role-picker,
+.sign-on {
+    display    : flex;
+    align-items: center;
+}
+
+button {
+    border       : 1px solid #7F9DB9;
+    border-radius: 3px
+}
+
+.button-container {
+    width : 33%;
+    margin: auto;
+
+}
+
+form {
+    padding: 10px;
+    border : 1px solid #ccc;
+    width  : 28%;
+}
