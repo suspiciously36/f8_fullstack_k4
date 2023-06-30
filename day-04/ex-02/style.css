@@ -1,0 +1,67 @@
+h1,
+button {
+  font-family: "Alfa Slab One", cursive;
+}
+
+h2,
+input {
+  font-size: 14px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h2,
+h1 {
+  text-align: center;
+  color: #3e2a1c;
+}
+
+h1 {
+    margin-top: -2px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    margin-top: 35px;
+    margin-bottom: 4px;
+    
+}
+
+.input-container {
+  margin-left: 15%;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  margin-bottom: 12px;
+}
+
+input {
+  border: 1px solid #aaa;
+  width: 165px;
+  padding: 5px 0 5px 10px;
+}
+
+button {
+  margin-bottom: 2px;
+  padding: 0px;
+  border-radius: 3px;
+  background-color: #b0332b;
+  border: none;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  width: 177px;
+  height: 30px;
+  font-size: 6px;
+}
+
+input::placeholder {
+  color: black;
+}
+
+input[placeholder="NAME"],
+input[placeholder="DATE"],
+input[placeholder="PEOPLE"] {
+  margin-right: 12px;
+}

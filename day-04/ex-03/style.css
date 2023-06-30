@@ -1,0 +1,138 @@
+.contents-name,
+.price-tag {
+  font-size: 8px;
+}
+
+.first-item,
+.second-item,
+.third-item,
+.forth-item {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 50px;
+}
+
+h1 {
+  margin: auto;
+  width: 25%;
+  margin-bottom: 10px;
+}
+
+.label-1,
+.label-2,
+.label-3,
+.label-4,
+.label-5 {
+  margin-left: -3px;
+  border: #ccc;
+  background-color: #f4f4f4;
+  font-size: 8px;
+  padding: 8px 12px;
+}
+
+.labels {
+  margin: auto;
+  width: 50%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.items-list {
+  margin-top: 35px;
+}
+
+.item-img,
+.contents-name,
+.price-tag,
+.item-voting {
+  display: block;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.contents-name {
+  padding-top: 15px;
+}
+
+.price-tag {
+  padding-top: 10px;
+  padding-left: 35px;
+}
+
+.item-voting {
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+
+input[id="skincare"]:checked ~ div .label-1,
+input[id="haircare"]:checked ~ div .label-2,
+input[id="cosmetics-cases"]:checked ~ div .label-3,
+input[id="fragrance"]:checked ~ div .label-4,
+input[id="makeup"]:checked ~ div .label-5 {
+  background-color: #29388e;
+  color: white;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.item-img-top {
+  height: auto;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.img-container:hover .item-img-top {
+  display: inline;
+}
+
+.fa-heart,
+.fa-right-left,
+.fa-eye,
+.cart {
+  background-color: #29388e;
+  color: #fff;
+  padding: 3px;
+  margin-right: -12px;
+}
+
+.cart {
+  margin-top: 25px;
+  font-size: 6px;
+  padding: 6px 12px;
+  margin-left: -75px;
+  margin-right: 5px;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+
+.btn-container {
+  display: none;
+  gap: 5px;
+  align-items: flex-start;
+  position: absolute;
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-container:hover .btn-container {
+  display: flex;
+}
+
+.item-btn-container {
+  position: relative;
+  width: 100%;
+}
+
+.img-container:hover .item-img {
+  display: none;
+}
