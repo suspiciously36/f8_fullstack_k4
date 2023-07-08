@@ -1,0 +1,230 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+html {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-image: url(http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg);
+    background-size: cover;
+    background-position: top -175px left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    display: flex;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 9px;
+}
+
+.content-left {
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    width: 40%;
+    height: 500px;
+    background-color: #ff574d;
+}
+
+.content-right {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    width: 60%;
+    height: 500px;
+    background-color: #fff;
+}
+
+.left-title {
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.left-title > span {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.jl-icon {
+    color: #ff574d;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.content-left > p {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 12px 30px;
+}
+
+.content-left > button {
+    color: #ff574d;
+    font-size: 1.6rem;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+    border: none;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 0 2px #ccc;
+}
+
+.social-media {
+    font-size: 2rem;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 32px;
+}
+
+.social-media .fa-brands {
+    border-radius: 5px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    background-color: #db5d4f80;
+}
+
+.login {
+    color: #272323;
+    margin-top: 10%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.login > span {
+    color:#ff574d;
+}
+
+.content-right hr {
+    width: 50px;
+    height: 2px;
+    border: none;
+    background-color: #ff574d;
+}
+
+.content-right:not(.login) {
+    color: #717171;
+}
+
+.content-input {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.content-input input {
+    padding-left: 16px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 75%;
+    height: 40px;
+    box-shadow: 0 0 4px #ccc;
+}
+
+.content-right input[type="checkbox"] {
+    margin-top: 20px;
+    margin-left: 10.5%;
+}
+
+.content-right .remember {
+    font-size: 1.4rem;
+}
+
+.content-right .forgot-pwd {
+    font-size: 1.4rem;
+    margin-left: 164px;
+    color: #717171;
+    text-decoration: none;
+}
+
+.btn {
+    display: block;
+    border: none ;
+    background-color: #ff574d;
+    width: 80%;
+    border-radius: 5px;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 65px;
+    margin-top: 20px;
+}
+
+.register span {
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.register a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #717171;
+}
+
+.fa-arrow-right {
+    left: 37.5%;
+    top: 45%;
+    position: absolute;
+    box-shadow: 0 0 3px #ccc;
+    font-size: 2rem;
+    color: #ff574d;
+    padding: 10px;
+    border-radius: 999px;
+    background-color: #fff;
+}
+
+.fa-arrow-right:hover {
+    transition: 0.5s;
+    scale: 1.2;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 0.5s;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    transition: 0.5s;
+    scale: 1.2;
+    cursor: pointer;
+    color: blue;
+}
+
+.content-right a:hover,.forgot-pwd:hover { 
+    color:blue;
+    scale: 1.1;
+}
