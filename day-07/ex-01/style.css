@@ -18,11 +18,13 @@ html {
 }
 
 .banner {
+    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
-    background: url(../../IMG/b7/ha-noi-melody-residences-cover.jpg) left top no-repeat fixed;
+    height: 100vh;
+    width: 100%;
+    background: url(../../IMG/b7/ha-noi-melody-residences-cover.jpg) center no-repeat;
 }
 
 .content-title {
