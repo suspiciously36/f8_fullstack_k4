@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700&display=swap');
+
+
+* {
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #cccccce7;
+}
+
+.items-list {
+    background-color: #f7f7f7;
+    height: 288px;
+    overflow: hidden scroll;
+}
+
+.fa-circle-xmark {
+    font-size: 2.2rem;
+    color: orangered;
+}
+
+.shopping-cart {
+    width: 350px;
+    background-color: #fff;
+    position: absolute;
+    height: 100%;
+    right: 0;
+}
+
+.cart-items img {
+    background-color: #d1dab3;
+    padding: 10px;
+    max-width: 70px;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: #eee;
+    height: 50px;
+    padding: 0 24px;
+}
+
+.cart-items {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.3rem;
+    padding: 30px 24px;
+    border-bottom: 1px solid #ccc;
+}
+
+.items-info {
+    padding-left: 12px;
+    position: relative;
+}
+
+.items-price {
+    font-size: 1.6rem;
+}
+
+.items-info > p {
+    color: #aaa;
+    padding: 12px 0;
+    font-size: 1.6rem;
+}
+
+.items-info-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.items-quantity {
+    color: #aaa;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    width: 77px;
+    justify-content: space-around;
+}
+
+.items-cancel {
+    position: absolute;
+    right: -44px;
+    top: 0;
+}
+
+.cart-total {
+    font-size: 1.6rem;
+    padding: 30px 24px;
+}
+
+.fa-xmark {
+    font-size: 1.8rem;
+    color: #aaa;
+}
+
+.cart-total > .notice {
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+.subtotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-price {
+    color: orangered
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    border: none;
+    background-color: blue;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.btn:first-child {
+    background-color: #fff;
+    color: #aaa;
+    border: 1px solid #aaa;
+}
+
+.shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shipping .fa-truck-fast {
+    color: blue;
+    font-size: 2.4rem;
+    border: 1px solid blue;
+    padding: 6px;
+    border-radius: 50%;
+}
