@@ -45,6 +45,7 @@ header nav {
 }
 
 .nav-items a {
+    color: rgb(44, 44, 44);
     padding: 24px 0;
     font-size: 18px;
     font-weight: 700;
