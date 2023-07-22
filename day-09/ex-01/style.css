@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+.main {
+  border: 1px solid #ccc;
+  padding: 30px;
+  width: 95%;
+  box-shadow: 0 0 8px #ccc;
+  display: flex;
+  margin: 50px auto;
+}
+
+.form-container {
+  width: 666px;
+  margin-left: 333px;
+}
+
+.form-info {
+  display: flex;
+  margin-bottom: 60px;
+  width: 600px;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.time {
+  position: absolute;
+  right: 29%;
+}
+
+.time > .time-milestone {
+  margin-top: 5px;
+  color: #666;
+}
+
+.info > p {
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.info-title {
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.btn {
+    color: #666;
+  font-family: "Space Grotesk", sans-serif;
+  width: 100px;
+  height: 30px;
+  border-radius: 99px;
+  border: none;
+  margin-top: 20px;
+}
+
+.point {
+  position: absolute;
+  right: 45%;
+  margin-top: 2px;
+}
+
+.point > .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  background: rgba(200, 200, 200, 0.7);
+  border-radius: 99px;
+  margin-top: 3px;
+}
+
+.point > .wrapper > .circle {
+  width: 11px;
+  height: 11px;
+  background: green;
+  border-radius: 99px;
+  z-index: 1;
+}
+
+.point > .wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-right: 1px;
+  height: 150px;
+  width: 1px;
+  background: rgba(200, 200, 200, 0.7);
+  bottom: -165px;
+}
+
+.last-wrapper::after {
+  content: "";
+  background-color: transparent;
+}
+
+.point > .last-wrapper {
+  width: 20px;
+  height: 20px;
+  background: rgba(200, 200, 200, 0.7);
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.point > .last-wrapper > .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #3d897d;
+  border-radius: 99px;
+  z-index: 1;
+}
+
+.form-container > .form-info:hover > .info {
+  transform: translateX(340px);
+  align-items: flex-start;
+}
+
+.info {
+  transition-duration: 0.5s;
+}
+
+.form-container > .form-info:hover > .time {
+  transform: translateX(-130px);
+}
+
+.time {
+  transition-duration: 0.5s;
+}
+
+.info > .btn:hover {
+  background-color: #a26f5a;
+  color: white;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 0.5s;
+}
+
+.background {
+  width: 555px;
+  height: 666px;
+  margin-top: 10px;
+  position: relative;
+  transform: translateX(7%);
+}
+
+.first-img-layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: url(../img/office.png) no-repeat;
+  background-size: cover;
+  height: 60%;
+  width: 50%;
+  bottom: 0;
+  z-index: 2;
+  box-shadow: 0 0 8px #666;
+}
+
+.second-img-layer {
+  background: url(../img/office.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  height: 60%;
+  width: 70%;
+  z-index: 1;
+  box-shadow: 0 0 8px #666;
+}
+
+.third-img-layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(58, 58, 180);
+  background-clip: content-box;
+}
+
+.layer-info {
+  margin-bottom: 35px;
+  margin-right: 20px;
+  text-align: end;
+}
+
+.layer-info > p:first-child {
+  background-clip: text;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 66px;
+  font-weight: 600;
+}
+
+.layer-info > p:last-child {
+  background-clip: text;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.layer-info > p:first-child,
+.layer-info > p:last-child {
+  color: transparent;
+  background: url(../img/office.png) top no-repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

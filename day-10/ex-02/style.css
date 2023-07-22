@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: #ebe9e9;
+}
+
+.container {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+label {
+  background-color: #fff;
+  cursor: pointer;
+  color: #666;
+  position: relative;
+  transition: all 0.5s ease;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 20px 30px;
+  width: 25%;
+}
+
+label span {
+  position: relative;
+  z-index: 1;
+}
+
+label::before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  top: 5px;
+  left: 5px;
+}
+
+label + label {
+  border-left: none;
+}
+
+ul {
+  perspective: 1000px;
+}
+
+ul li {
+  color: #999;
+  background-color: #fff;
+  position: absolute;
+  overflow: scroll hidden;
+  border: 1px solid #ccc;
+  border-top: none;
+  padding: 30px;
+  list-style-type: none;
+  opacity: 0;
+  transform-origin: 50% 0px;
+  width: 1000px;
+  transform: rotate3d(1, 0, 0, -90deg);
+  transition: all 1s ease;
+  transition-delay: 0s;
+}
+
+input#slideshow:checked ~ label[for="slideshow"]::before,
+input#algoritmo:checked ~ label[for="algoritmo"]::before,
+input#barra:checked ~ label[for="barra"]::before,
+input#captcha:checked ~ label[for="captcha"]::before {
+  background-color: #1f5bb4;
+  color: #fff;
+}
+
+input#slideshow:checked ~ label[for="slideshow"],
+input#algoritmo:checked ~ label[for="algoritmo"],
+input#barra:checked ~ label[for="barra"],
+input#captcha:checked ~ label[for="captcha"] {
+  color: #fff;
+}
+
+label:hover::before {
+  background-color: #1f5bb4;
+  color: #fff;
+}
+
+label:hover {
+  color: #fff;
+}
+
+input#slideshow:checked ~ ul li:nth-child(1),
+input#algoritmo:checked ~ ul li:nth-child(2),
+input#barra:checked ~ ul li:nth-child(3),
+input#captcha:checked ~ ul li:nth-child(4) {
+  opacity: 1;
+  transform: rotateX(0);
+  transition-delay: 0.3s;
+}

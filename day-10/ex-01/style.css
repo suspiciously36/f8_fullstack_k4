@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-color: #3d9be7;
+}
+
+.menu {
+    text-align: end;
+    width: 500px;
+    translate: 50vw 30vh;
+    font-weight: 300;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.menu span:first-child {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.menu span:last-child {
+    font-size: 4rem;
+}
+
+.burger-container {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    z-index: 0;
+    top: -100px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+
+.hamburger {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    color: #3d9be7;
+    margin-right: 50px;
+    margin-left: 30px;
+    font-size: 3rem;
+    text-align: end;
+    line-height: 277px;
+    z-index: 5;
+}
+
+.turning-arrow {
+    cursor: pointer;
+    transition-property: transform opacity visibility;
+    transition: 0.5s ease;
+    position: relative;
+    z-index: 99;
+    left: -34px;
+    color: #3d9be7;
+    font-size: 3.1rem;
+    opacity: 0;
+    visibility: none;
+}
+
+.overlay-nav {
+    position: relative;
+    transform: translateY(-50px);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 3;
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    cursor: none;
+}
+
+.overlay-nav a {
+    color: #3d9be7;
+    text-decoration: none;
+    padding: 10px 70px;
+    transition: 0.2s ease;
+    transition-property: background-color color;
+}
+
+.overlay-nav a:focus {
+    background-color: #eee;
+    color: #666;
+}
+
+input[id="burger"]:checked + label .turning-arrow {
+    transform: rotate(180deg);
+    opacity: 1;
+    visibility: visible;
+}
+
+input[id="burger"]:checked + label .fa-bars {
+    opacity: 0;
+    visibility: hidden;
+}
+
+input[id="burger"]:checked + label .burger-container {
+    width: 3000px;
+    height: 3000px;
+    border-radius: 0;
+}
+
+input[id="burger"]:checked + label .overlay-nav {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+}

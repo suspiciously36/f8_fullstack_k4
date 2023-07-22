@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #25477a;
+}
+
+.container {
+    transition: transform 0.5s ease;
+    position: relative;
+    margin: 30px auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.shadow {
+    border-radius: 99px;
+    translate: 0 100px;
+    margin: auto;
+    height: 50px;
+    width: 777px;
+    background: radial-gradient(rgba(0, 0, 0, 0.603) ,transparent, transparent);
+    transition: all 0.5s ease;
+}
+
+.container:hover + .shadow {
+    background: radial-gradient(rgba(0, 0, 0, 0.856) ,transparent, transparent);
+    scale: 0.8;
+}
+
+.container:hover {
+    transform: translateY(100px);
+}
+
+.left-rectangle {
+    position: absolute;
+    bottom: -183px;
+    right: 0;
+    width: 500px;
+    height: 300px;
+    background-color: #DD564B;
+    transform: skewY(25deg);
+}
+
+.right-rectangle {
+    position: absolute;
+    bottom: -183px;
+    right: 0;
+    width: 500px;
+    height: 300px;
+    background-color: #DF6155;
+    transform: skewY(-25deg);
+}
+
+.letter {
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+    translate: 0 385px;
+    left: calc(50% - 200px);
+    width: 400px;
+    height: 500px;
+    background-color: #fff;
+}
+
+.small-rectangle:first-child {
+    margin-bottom: -20px;
+    width: 150px;
+}
+
+.small-rectangle {
+    margin: 40px 20px;
+    width: 75px;
+    height: 25px;
+    background-color: #CC5B68;
+}
+
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(165, 42, 42, 0.1);
+    top: 190px;
+    right: 22px;
+    border-radius: 50%;
+}
+
+.envelope {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.envelope-back {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.back {
+    width: 100%;
+    height: 234px;
+    position: absolute;
+    bottom: 0;
+    background-color: #D34C45;
+}
+
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 234px;
+    transform: rotateX(90deg);
+    transform-origin: bottom;
+    border: 250px solid #D34C45;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transition: all 0.3s ease;
+    transition-delay: 0.3s;
+}
+
+.border {
+    width: 100%;
+    position: absolute;
+    border-top: 10px dashed #CC5B68;
+    transform: skew(-45deg) scaleY(3) scaleX(2);
+    top: 0;
+    left: 0;
+}
+
+.container:hover .triangle {
+    transform: rotateX(65deg);
+    transition-delay: 0s;
+}
+
+.container:hover .letter {
+    transform: translateY(-333px);
+    transition-delay: 0.15s;
+}
