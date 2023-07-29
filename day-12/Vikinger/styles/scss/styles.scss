@@ -22,17 +22,17 @@ html {
 
   #login:checked ~ .landing-page-info .landing-page_switches .btn1 {
     background-color: #fff;
-    color: #333; 
+    color: #333;
   }
-  #login:checked ~ .landing-page-forms .form-login-register:nth-child(2){
+  #login:checked ~ .landing-page-forms .form-login-register:nth-child(2) {
     translate: 250px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     opacity: 0;
     visibility: 0;
   }
   #register:checked ~ .landing-page-forms .form-login-register:nth-child(1) {
     translate: 250px;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     opacity: 0;
     visibility: 0;
   }
@@ -270,7 +270,7 @@ html {
                   font-size: 1.3rem;
                 }
                 &:not(:focus):valid + label {
-                    top: -10px;
+                  top: -10px;
                   font-size: 1.3rem;
                 }
               }
@@ -341,72 +341,108 @@ html {
   }
 }
 
-@media only screen and (max-width:1500px) {
-    .landing-page_right__decoration {
-        display: none;
-    }
-    .landing-page-info {
-        left: 6% !important;
-    }
-    .landing-page-forms {
-        right: 6% !important;
-    }
+@media only screen and (max-width: 1500px) {
+  .landing-page_right__decoration {
+    display: none;
+  }
+  .landing-page-info {
+    left: 6% !important;
+  }
+  .landing-page-forms {
+    right: 6% !important;
+  }
 }
 
 @media screen and (max-width: 1365px) {
-    .landing-page_container {
-        position: static;
-        padding: 80px 0;
-
-    }
-    .landing-page-desc {
-        position: static;
-        display: none;
-    }
-    .landing-page-info {
-        position: static !important;
-        margin: 0 auto;
-    }
-    .form-login-register img {
-        display: none;
-    }
-    .landing-page_switches {
-       margin-top: 0 !important;
-    }
-    .landing-page-forms {
-        position: static !important;
-        margin: 33px auto;
-    }
-    .form-login-register:nth-child(2) {
-        position: static !important;
-    }
-    #login:checked ~ .landing-page-forms .form-login-register:nth-child(2){
-        display: none;
-      }
-      #register:checked ~ .landing-page-forms .form-login-register:nth-child(1) {
-        display: none;
-      }
+  .landing-page_container {
+    position: static;
+    padding: 80px 0;
+  }
+  .landing-page-desc {
+    position: static;
+    display: none;
+  }
+  .landing-page-info {
+    position: static !important;
+    margin: 0 auto;
+  }
+  .form-login-register img {
+    display: none;
+  }
+  .landing-page_switches {
+    margin-top: 0 !important;
+  }
+  .landing-page-forms {
+    position: static !important;
+    margin: 33px auto;
+  }
+  .form-login-register:nth-child(2) {
+    position: static !important;
+  }
+  #login:checked ~ .landing-page-forms .form-login-register:nth-child(2) {
+    display: none;
+  }
+  #register:checked ~ .landing-page-forms .form-login-register:nth-child(1) {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .form-login-register {
-        width: 103% !important;
-        margin: 0 auto;
-    }
-    .landing-page-info {
-        width: 100% !important; 
-        margin: 0 auto;
-   }
+  .landing-page-forms {
+    width: 90% !important;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+  .landing-page-info {
+    width: 100% !important;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    .form-login-register {
-        width: 90% !important;
-        margin: 0 auto;
+  .landing-page-forms {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .landing-page-info_title {
+    font-size: 7rem !important;
+    padding-top: 10px;
+  }
 
+  .landing-page_switches .btn {
+    width: 45%;
+    text-align: center;
+  }
+  .landing-page-info {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .form-login-register {
+    padding: 35px !important;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .landing-page-info {
+    width: 80% !important;
+  }
+  .landing-page-info_title {
+    font-size: 7rem !important;
+    padding-top: 10px;
+  }
+  .landing-page-forms {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 20px 12px !important;
+    .form-login-register {
+      padding: 35px !important;
     }
-   .landing-page-info {
-        width: 100% !important; 
-        margin: 0 auto;
-   }
+  }
+  .landing-page_switches .btn {
+    width: 60%;
+    text-align: center;
+  }
+  .social-account-login {
+    font-size: 0.9rem !important;
+  }
 }

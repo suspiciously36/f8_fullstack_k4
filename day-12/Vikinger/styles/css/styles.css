@@ -373,9 +373,10 @@ html {
   }
 }
 @media screen and (max-width: 600px) {
-  .form-login-register {
-    width: 103% !important;
+  .landing-page-forms {
+    width: 90% !important;
     margin: 0 auto;
+    padding-top: 30px;
   }
   .landing-page-info {
     width: 100% !important;
@@ -383,13 +384,48 @@ html {
   }
 }
 @media screen and (max-width: 500px) {
-  .form-login-register {
+  .landing-page-forms {
     width: 90% !important;
     margin: 0 auto;
+  }
+  .landing-page-info_title {
+    font-size: 7rem !important;
+    padding-top: 10px;
+  }
+  .landing-page_switches .btn {
+    width: 45%;
+    text-align: center;
   }
   .landing-page-info {
     width: 100% !important;
     margin: 0 auto;
+  }
+  .form-login-register {
+    padding: 35px !important;
+  }
+}
+@media screen and (max-width: 390px) {
+  .landing-page-info {
+    width: 80% !important;
+  }
+  .landing-page-info_title {
+    font-size: 7rem !important;
+    padding-top: 10px;
+  }
+  .landing-page-forms {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 20px 12px !important;
+  }
+  .landing-page-forms .form-login-register {
+    padding: 35px !important;
+  }
+  .landing-page_switches .btn {
+    width: 60%;
+    text-align: center;
+  }
+  .social-account-login {
+    font-size: 0.9rem !important;
   }
 }
 
